@@ -1,0 +1,10 @@
+framework module LlamaKit {
+  umbrella header "Pods-LlamaKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module LlamaKit.Swift {
+    header "LlamaKit-Swift.h"
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AD098668F3A8A3381C9129A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F98443CE3D253C016CC8A3 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ED03B34F1B8AA9F900E36F90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03B34E1B8AA9F900E36F90 /* main.m */; };
 		ED03B3521B8AA9F900E36F90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03B3511B8AA9F900E36F90 /* AppDelegate.m */; };
 		ED03B3551B8AA9F900E36F90 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03B3541B8AA9F900E36F90 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		ED03B35A1B8AA9F900E36F90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED03B3591B8AA9F900E36F90 /* Images.xcassets */; };
 		ED03B35D1B8AA9F900E36F90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED03B35B1B8AA9F900E36F90 /* LaunchScreen.xib */; };
 		ED03B3691B8AA9FA00E36F90 /* Test_ReactiveCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED03B3681B8AA9FA00E36F90 /* Test_ReactiveCocoaTests.m */; };
+		ED03B3731B8AB16A00E36F90 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = ED03B3721B8AB16A00E36F90 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B882CD23807E1AD614ECB79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		91F98443CE3D253C016CC8A3 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD0627198017666E96113A8E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ED03B3491B8AA9F900E36F90 /* Test_ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_ReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED03B34D1B8AA9F900E36F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED03B34E1B8AA9F900E36F90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		ED03B3621B8AA9FA00E36F90 /* Test_ReactiveCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_ReactiveCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED03B3671B8AA9FA00E36F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED03B3681B8AA9FA00E36F90 /* Test_ReactiveCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_ReactiveCocoaTests.m; sourceTree = "<group>"; };
+		ED03B3721B8AB16A00E36F90 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD098668F3A8A3381C9129A /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +67,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14AD15F5F9D7A551A9C551F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F98443CE3D253C016CC8A3 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		263D192555DEEA9E3C44C7BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD0627198017666E96113A8E /* Pods.debug.xcconfig */,
+				4B882CD23807E1AD614ECB79 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED03B3401B8AA9F900E36F90 = {
 			isa = PBXGroup;
 			children = (
+				ED03B3721B8AB16A00E36F90 /* README.md */,
 				ED03B34B1B8AA9F900E36F90 /* Test_ReactiveCocoa */,
 				ED03B3651B8AA9FA00E36F90 /* Test_ReactiveCocoaTests */,
 				ED03B34A1B8AA9F900E36F90 /* Products */,
+				263D192555DEEA9E3C44C7BF /* Pods */,
+				14AD15F5F9D7A551A9C551F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED03B36C1B8AA9FA00E36F90 /* Build configuration list for PBXNativeTarget "Test_ReactiveCocoa" */;
 			buildPhases = (
+				45A1493111FF4F182E9B86AD /* Check Pods Manifest.lock */,
 				ED03B3451B8AA9F900E36F90 /* Sources */,
 				ED03B3461B8AA9F900E36F90 /* Frameworks */,
 				ED03B3471B8AA9F900E36F90 /* Resources */,
+				AA16BD55A8948ADF0FAEC808 /* Embed Pods Frameworks */,
+				46FA3D36F5D0372476EEF4B2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +244,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45A1493111FF4F182E9B86AD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46FA3D36F5D0372476EEF4B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA16BD55A8948ADF0FAEC808 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED03B3451B8AA9F900E36F90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +299,7 @@
 			files = (
 				ED03B3551B8AA9F900E36F90 /* ViewController.m in Sources */,
 				ED03B3521B8AA9F900E36F90 /* AppDelegate.m in Sources */,
+				ED03B3731B8AB16A00E36F90 /* README.md in Sources */,
 				ED03B34F1B8AA9F900E36F90 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +424,7 @@
 		};
 		ED03B36D1B8AA9FA00E36F90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0627198017666E96113A8E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Test_ReactiveCocoa/Info.plist;
@@ -355,6 +435,7 @@
 		};
 		ED03B36E1B8AA9FA00E36F90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B882CD23807E1AD614ECB79 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Test_ReactiveCocoa/Info.plist;
@@ -416,6 +497,7 @@
 				ED03B36E1B8AA9FA00E36F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED03B36F1B8AA9FA00E36F90 /* Build configuration list for PBXNativeTarget "Test_ReactiveCocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +506,7 @@
 				ED03B3711B8AA9FA00E36F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
